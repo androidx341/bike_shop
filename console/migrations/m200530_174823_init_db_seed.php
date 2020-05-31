@@ -84,8 +84,8 @@ class m200530_174823_init_db_seed extends Migration
             $this->insert('bikes', [
                 'name' => sprintf('Велосипед %s %s %s', $brand['name'], $bikeType['name'], $color['name'] ),
                 'gearsCount' => rand(1, 27),
-                'wheelSize' => rand(16, 29) + rand(0, 1) / 2,
-                'frameSize' => rand(11, 19) + rand(0, 1) / 2,
+                'wheelSize' => rand(21, 29),
+                'frameSize' => rand(15, 21),
                 'description' => $faker->text(200),
                 'photoId' => $photo['id'],
                 'price' => rand(2000, 30000),
